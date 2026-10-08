@@ -1,0 +1,18 @@
+{
+  "patient_id": "SIM-PRN-MISSING-001",
+  "diagnosis": "Synthetic pain-management teaching case",
+  "discharge_summary": "Synthetic case used to verify PRN reconciliation safeguards.",
+  "medication_reconciliation_status": "complete",
+  "medication_list": [
+    {
+      "name": "Synthetic PRN medicine",
+      "dosage": "1 tablet",
+      "frequency": "as needed",
+      "route": "oral",
+      "is_prn": true
+    }
+  ],
+  "allergies": [],
+  "follow_up_needs": ["Synthetic clinician review"],
+  "relevant_notes": ["Synthetic teaching case only."]
+}

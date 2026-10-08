@@ -1,0 +1,74 @@
+[
+  {
+    "evidence_id": "discharge-general-v1",
+    "source": "simulated_discharge_guidelines",
+    "title": "General Discharge Safety Guidance",
+    "content": "Use the clinician-approved medication list, follow-up plan, and red-flag advice in the discharge record.",
+    "keywords": ["discharge", "follow", "medication", "care"],
+    "version": "1.1",
+    "source_url": "https://www.moh.gov.sg/docs/librariesprovider5/default-document-library/national-medication-reconciliation-guidelines-2018.pdf",
+    "approval_status": "approved",
+    "reviewed_at": "2026-09-21",
+    "review_scope": "Synthetic discharge-plan safety education; not patient-specific prescribing."
+  },
+  {
+    "evidence_id": "diabetes-home-v1",
+    "source": "simulated_patient_education",
+    "title": "Diabetes Home Monitoring Education",
+    "content": "Home monitoring instructions must match the clinician-provided discharge plan and should not introduce a new medication regimen.",
+    "keywords": ["diabetes", "glucose", "metformin", "monitoring"],
+    "version": "1.1",
+    "source_url": "https://www.healthhub.sg/medication-devices-and-treatment/handling-medications",
+    "approval_status": "approved",
+    "reviewed_at": "2026-09-21",
+    "review_scope": "Synthetic patient education only; follow the clinician-provided plan."
+  },
+  {
+    "evidence_id": "hypertension-followup-v1",
+    "source": "simulated_followup_guidelines",
+    "title": "Hypertension Follow-up Guidance",
+    "content": "Follow-up timing and monitoring tasks must be taken from the documented clinical plan or confirmed by a reviewer.",
+    "keywords": ["hypertension", "blood", "pressure", "amlodipine", "cardiology"],
+    "version": "1.1",
+    "source_url": "https://hpp.moh.gov.sg/guidelines/clinical-practice-guidelines/",
+    "approval_status": "approved",
+    "reviewed_at": "2026-09-21",
+    "review_scope": "Follow-up reminders must be clinician-confirmed; no timing inference."
+  },
+  {
+    "evidence_id": "medication-reconciliation-v1",
+    "source": "simulated_medication_safety_guidelines",
+    "title": "Medication Reconciliation Safety",
+    "content": "A discharge medication list must be reconciled before the plan is finalized. Missing or conflicting medication information requires clinician review.",
+    "keywords": ["medication", "reconciliation", "dose", "frequency", "allergy", "conflict"],
+    "version": "1.1",
+    "source_url": "https://www.moh.gov.sg/docs/librariesprovider5/default-document-library/national-medication-reconciliation-guidelines-2018.pdf",
+    "approval_status": "approved",
+    "reviewed_at": "2026-09-21",
+    "review_scope": "Medication reconciliation safety for synthetic teaching cases."
+  },
+  {
+    "evidence_id": "red-flags-v1",
+    "source": "simulated_patient_education",
+    "title": "Red Flag Communication Guidance",
+    "content": "Patient-facing plans should use the documented care-team contact pathway for worsening symptoms and must not invent emergency thresholds.",
+    "keywords": ["warning", "red", "flag", "worsening", "symptoms", "contact"],
+    "version": "1.1",
+    "source_url": "https://www.healthhub.sg/medication-devices-and-treatment/handling-medications",
+    "approval_status": "approved",
+    "reviewed_at": "2026-09-21",
+    "review_scope": "General communication only; no emergency threshold inference."
+  },
+  {
+    "evidence_id": "home-support-v1",
+    "source": "simulated_transition_of_care_guidelines",
+    "title": "Home Support and Care Coordination",
+    "content": "Discharge coordination should record clinician-confirmed follow-up tasks and known support needs. Unconfirmed services must be reviewed rather than promised.",
+    "keywords": ["home", "support", "caregiver", "follow", "coordination", "service"],
+    "version": "1.1",
+    "source_url": "https://www.ace-hta.gov.sg/healthcare-professionals/ace-repository-for-clinical-guidelines/",
+    "approval_status": "approved",
+    "reviewed_at": "2026-09-21",
+    "review_scope": "Care coordination prompts for synthetic teaching cases."
+  }
+]

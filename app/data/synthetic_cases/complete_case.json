@@ -1,0 +1,29 @@
+{
+  "patient_id": "SIM-COMPLETE-001",
+  "age": 68,
+  "gender": "female",
+  "diagnosis": "Type 2 diabetes and hypertension",
+  "discharge_summary": "Synthetic patient discharged after documented education and stabilization.",
+  "medication_reconciliation_status": "complete",
+  "medication_list": [
+    {
+      "name": "Metformin",
+      "dosage": "500 mg",
+      "frequency": "twice daily",
+      "route": "oral",
+      "discharge_action": "continue",
+      "source_reference": "synthetic-discharge-order-001"
+    },
+    {
+      "name": "Amlodipine",
+      "dosage": "5 mg",
+      "frequency": "once daily",
+      "route": "oral",
+      "discharge_action": "continue",
+      "source_reference": "synthetic-discharge-order-002"
+    }
+  ],
+  "allergies": ["Penicillin"],
+  "follow_up_needs": ["Synthetic cardiology review", "Synthetic home blood pressure monitoring"],
+  "relevant_notes": ["Synthetic teaching case only."]
+}

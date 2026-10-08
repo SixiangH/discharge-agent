@@ -1,0 +1,12 @@
+{
+  "patient_id": "SIM-RISK-001",
+  "diagnosis": "Hypertension",
+  "discharge_summary": "Synthetic case used to demonstrate escalation.",
+  "medication_reconciliation_status": "complete",
+  "medication_list": [
+    {"name": "Amlodipine", "dosage": "5 mg", "frequency": "once daily"}
+  ],
+  "allergies": ["Amlodipine"],
+  "follow_up_needs": ["Synthetic review"],
+  "relevant_notes": []
+}
