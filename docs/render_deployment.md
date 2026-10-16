@@ -1,5 +1,27 @@
 # Render presentation deployment
 
+## Live presentation service
+
+- Dashboard: https://discharge-agent-demo.onrender.com
+- API documentation: https://discharge-agent-demo.onrender.com/docs
+- Render management: https://dashboard.render.com/web/srv-db8v652vcj2c73bbgdp0
+- Service: discharge-agent-demo, Free, Singapore, My Workspace.
+- Deployed application commit: 83d3648ed84ccd3d11d958795e9e47844e46423f.
+- Created directly through the Render integration on 16 October 2026;
+  render.yaml remains available to reproduce the configuration as a Blueprint.
+- Automatic deploys are disabled. Later GitHub pushes require a manual deploy
+  when application changes should go live.
+
+Public verification passed on 16 October 2026: dashboard and API docs returned
+HTTP 200; all four repository synthetic fixtures took their expected review or
+escalation paths; pending and escalated plans returned HTTP 409 on final export;
+all three escalated cases rejected an approval attempt with HTTP 409; explicit
+approval of the complete case enabled final JSON and FHIR-shaped export.
+Verification cases have identifiers prefixed with SMOKE- and can appear in the
+shared case list until the free service restarts.
+
+## Recreating the deployment
+
 The root render.yaml defines a free Python web service in Singapore. Import
 the SixiangH/discharge-agent repository as a Render Blueprint and deploy main.
 The private repository must be accessible to the Render GitHub integration.

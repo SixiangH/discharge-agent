@@ -47,6 +47,10 @@ be used with real patient data.
 
 ## Render demonstration deployment
 
+Live demo: **https://discharge-agent-demo.onrender.com**
+
+API documentation: https://discharge-agent-demo.onrender.com/docs
+
 The repository includes a free Render Blueprint in `render.yaml`, pinned runtime
 dependencies in `requirements-render.txt`, and [deployment and presentation
 instructions](docs/render_deployment.md). Import the private repository into
