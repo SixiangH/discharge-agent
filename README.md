@@ -45,7 +45,16 @@ be used with real patient data.
    draft** confirmation button and use the validated case-submission workflow;
    mixing both inputs is blocked. Medication reminders remain read-only.
 
-## Current Status
+## Render demonstration deployment
+
+The repository includes a free Render Blueprint in `render.yaml`, pinned runtime
+dependencies in `requirements-render.txt`, and [deployment and presentation
+instructions](docs/render_deployment.md). Import the private repository into
+Render and deploy the Blueprint. The demo uses one Uvicorn worker and deterministic
+drafting by default. Free-service SQLite data is temporary and is lost on restart,
+redeploy, or idle spin-down; open the dashboard before the presentation to warm it up.
+
+## Prototype capabilities
 
 The prototype includes:
 - Pydantic-validated simulated cases and structured final output

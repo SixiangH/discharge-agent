@@ -1,0 +1,9 @@
+# Runtime packages pinned to the locally verified presentation environment.
+# Development/test tools remain in requirements.txt.
+fastapi==0.115.12
+uvicorn==0.34.2
+pydantic==2.13.5
+python-dotenv==1.1.0
+langgraph==1.2.11
+langgraph-checkpoint-sqlite==3.1.1
+langchain-openai==1.6.1
