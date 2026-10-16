@@ -1,0 +1,14 @@
+{
+  "patient_id": "SIM-TEST-RISK-007",
+  "age": 45,
+  "gender": "female",
+  "diagnosis": "Synthetic allergy-conflict teaching case",
+  "discharge_summary": "Synthetic case intentionally lists a medicine that conflicts with the recorded allergy.",
+  "medication_reconciliation_status": "complete",
+  "medication_list": [
+    {"name": "Amlodipine", "dosage": "5 mg", "frequency": "once daily", "route": "oral", "discharge_action": "continue"}
+  ],
+  "allergies": ["Amlodipine"],
+  "follow_up_needs": ["Synthetic allergy-conflict review"],
+  "relevant_notes": ["Synthetic teaching case; expected outcome is escalation."]
+}

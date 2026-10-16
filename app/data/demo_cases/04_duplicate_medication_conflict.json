@@ -1,0 +1,15 @@
+{
+  "patient_id": "SIM-TEST-RISK-004",
+  "age": 71,
+  "gender": "male",
+  "diagnosis": "Synthetic duplicate-medication conflict teaching case",
+  "discharge_summary": "Synthetic case intentionally contains contradictory reconciled medication fields.",
+  "medication_reconciliation_status": "complete",
+  "medication_list": [
+    {"name": "Amlodipine", "dosage": "5 mg", "frequency": "once daily", "route": "oral", "discharge_action": "continue"},
+    {"name": "Amlodipine", "dosage": "10 mg", "frequency": "once daily", "route": "oral", "discharge_action": "continue"}
+  ],
+  "allergies": [],
+  "follow_up_needs": ["Synthetic medication-conflict review"],
+  "relevant_notes": ["Synthetic teaching case; expected outcome is escalation."]
+}

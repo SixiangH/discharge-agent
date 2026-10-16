@@ -1,0 +1,14 @@
+{
+  "patient_id": "SIM-TEST-PRN-003",
+  "age": 49,
+  "gender": "female",
+  "diagnosis": "Synthetic PRN medication teaching case",
+  "discharge_summary": "Synthetic case: PRN source fields are complete for reviewer verification.",
+  "medication_reconciliation_status": "complete",
+  "medication_list": [
+    {"name": "Synthetic PRN medicine", "dosage": "1 tablet", "frequency": "as needed", "route": "oral", "discharge_action": "continue", "is_prn": true, "prn_indication": "the documented synthetic symptom", "max_frequency": "the clinician-provided maximum frequency", "source_reference": "synthetic-order-prn-001"}
+  ],
+  "allergies": [],
+  "follow_up_needs": ["Synthetic clinician review of PRN use"],
+  "relevant_notes": ["Synthetic teaching case only."]
+}

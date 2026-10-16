@@ -16,6 +16,7 @@ from app.persistence.case_repository import CaseRepository
 from app.schemas.patient_schema import PatientCaseInput, ReviewDecision
 from app.tools.external.pubmed_tool import PubMedEvidenceTool
 from app.api.reviewer_ui import render_reviewer_ui
+from app.services.demo_cases import list_demo_cases
 from app.interoperability.fhir_mapper import build_synthetic_bundle
 from app.services.knowledge_curation import (
     KnowledgeCandidateCreate, KnowledgeCurationRepository, KnowledgeReviewDecision,
@@ -52,6 +53,11 @@ def create_app(database_path: str | Path | None = None, curation_path: str | Pat
     @app.get("/", response_class=HTMLResponse)
     def reviewer_ui() -> str:
         return render_reviewer_ui()
+
+    @app.get("/demo-cases")
+    def demo_cases() -> list[dict[str, Any]]:
+        """Bundled synthetic inputs; running one still requires POST /cases."""
+        return list_demo_cases()
 
     @app.post("/cases")
     def submit_case(submission: CaseSubmission) -> dict[str, Any]:

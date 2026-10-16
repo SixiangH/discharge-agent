@@ -11,6 +11,7 @@ be used with real patient data.
 - `app/schemas` - Pydantic schemas
 - `app/data/knowledge_base` - simulated knowledge data
 - `app/data/synthetic_cases` - positive and safety-focused demo cases
+- `app/data/demo_cases` - seven bundled presentation inputs, available in the dashboard
 - `app/api` - local reviewer API and OpenAPI interface
 - `app/persistence` - SQLite case and audit snapshots
 - `tests` - test cases
@@ -40,8 +41,9 @@ be used with real patient data.
 
    Open `http://127.0.0.1:8000/` for the structured reviewer dashboard. It
    provides case-list/risk filtering, evidence and safety cards, limited draft
-   editing, and explicit review actions. Choose **one** input method: upload a
-   local synthetic `.json` case or paste JSON. Both wait for the same **Create
+   editing, and explicit review actions. Select one of the seven **Built-in demo
+   cases** to fill the JSON editor, or upload a local synthetic `.json` case or
+   paste JSON. All wait for the same **Create
    draft** confirmation button and use the validated case-submission workflow;
    mixing both inputs is blocked. Medication reminders remain read-only.
 
@@ -55,8 +57,16 @@ The repository includes a free Render Blueprint in `render.yaml`, pinned runtime
 dependencies in `requirements-render.txt`, and [deployment and presentation
 instructions](docs/render_deployment.md). Import the private repository into
 Render and deploy the Blueprint. The demo uses one Uvicorn worker and deterministic
-drafting by default. Free-service SQLite data is temporary and is lost on restart,
+drafting by default in a new Blueprint. The current online demo enables
+`gpt-4.1-mini` through service-side environment variables; API keys are never
+included in the case catalogue. Free-service SQLite data is temporary and is lost on restart,
 redeploy, or idle spin-down; open the dashboard before the presentation to warm it up.
+
+For a demonstration from another computer, choose **Built-in demo cases**, inspect
+the filled JSON and select **Create draft**. No download or local file is needed.
+The catalogue is served read-only at `GET /demo-cases`; loading it makes no model
+call and creates no saved case. Every submission still uses `POST /cases` and the
+normal safety and human-review gates. Repeated submissions create new runs.
 
 ## Prototype capabilities
 

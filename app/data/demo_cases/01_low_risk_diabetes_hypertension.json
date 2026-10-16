@@ -1,0 +1,15 @@
+{
+  "patient_id": "SIM-TEST-LOW-001",
+  "age": 63,
+  "gender": "female",
+  "diagnosis": "Synthetic type 2 diabetes and hypertension teaching case",
+  "discharge_summary": "Synthetic case: discharge education and documented medication reconciliation are complete.",
+  "medication_reconciliation_status": "complete",
+  "medication_list": [
+    {"name": "Metformin", "dosage": "500 mg", "frequency": "twice daily", "route": "oral", "discharge_action": "continue", "source_reference": "synthetic-order-low-001"},
+    {"name": "Amlodipine", "dosage": "5 mg", "frequency": "once daily", "route": "oral", "discharge_action": "continue", "source_reference": "synthetic-order-low-002"}
+  ],
+  "allergies": ["Penicillin"],
+  "follow_up_needs": ["Synthetic primary-care medication review", "Synthetic home blood pressure log review"],
+  "relevant_notes": ["Synthetic teaching case only; no real patient data."]
+}

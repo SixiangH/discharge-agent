@@ -1,0 +1,14 @@
+{
+  "patient_id": "SIM-TEST-WARN-006",
+  "age": 54,
+  "gender": "male",
+  "diagnosis": "Synthetic hypertension follow-up teaching case",
+  "discharge_summary": "Synthetic case intentionally omits clinician-provided follow-up tasks for reviewer confirmation.",
+  "medication_reconciliation_status": "complete",
+  "medication_list": [
+    {"name": "Amlodipine", "dosage": "5 mg", "frequency": "once daily", "route": "oral", "discharge_action": "continue"}
+  ],
+  "allergies": [],
+  "follow_up_needs": [],
+  "relevant_notes": ["Synthetic teaching case; expected outcome is reviewer attention, not automatic finalization."]
+}

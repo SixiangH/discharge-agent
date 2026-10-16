@@ -1,0 +1,16 @@
+{
+  "patient_id": "SIM-TEST-ACTION-002",
+  "age": 57,
+  "gender": "male",
+  "diagnosis": "Synthetic medication-reconciliation teaching case",
+  "discharge_summary": "Synthetic case: source orders include one continuing medicine, one new medicine, and one stopped medicine.",
+  "medication_reconciliation_status": "complete",
+  "medication_list": [
+    {"name": "Amlodipine", "dosage": "5 mg", "frequency": "once daily", "route": "oral", "discharge_action": "continue", "source_reference": "synthetic-order-action-001"},
+    {"name": "Metformin", "dosage": "500 mg", "frequency": "twice daily", "route": "oral", "discharge_action": "start", "source_reference": "synthetic-order-action-002"},
+    {"name": "Synthetic discontinued medicine", "discharge_action": "stop", "source_reference": "synthetic-order-action-003"}
+  ],
+  "allergies": [],
+  "follow_up_needs": ["Synthetic clinician-confirmed medication reconciliation follow-up"],
+  "relevant_notes": ["Synthetic teaching case only; actions must be restated, not inferred."]
+}

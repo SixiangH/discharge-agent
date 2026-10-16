@@ -1,0 +1,14 @@
+{
+  "patient_id": "SIM-TEST-RISK-005",
+  "age": 66,
+  "gender": "female",
+  "diagnosis": "Synthetic incomplete reconciliation teaching case",
+  "discharge_summary": "Synthetic case intentionally has an unknown medication-reconciliation status.",
+  "medication_reconciliation_status": "unknown",
+  "medication_list": [
+    {"name": "Metformin", "dosage": "500 mg", "frequency": "twice daily", "route": "oral"}
+  ],
+  "allergies": [],
+  "follow_up_needs": ["Synthetic pharmacist reconciliation review"],
+  "relevant_notes": ["Synthetic teaching case; expected outcome is escalation before review."]
+}
