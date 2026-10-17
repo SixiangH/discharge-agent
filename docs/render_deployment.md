@@ -46,7 +46,15 @@ Manual Web Service settings, if not using the Blueprint:
 The Blueprint above recreates the offline baseline. The existing live demo was
 updated on 16 October 2026 with `DISCHARGE_LLM_ENABLED=true`, model
 `gpt-4.1-mini`, and `OPENAI_API_KEY` stored only in Render environment variables.
-Public drug evidence remains disabled. A live synthetic run returned
+Public drug evidence was enabled on 17 October 2026 via
+`EXTERNAL_EVIDENCE_ENABLED=true`. The workflow performs read-only RxNorm,
+DailyMed and openFDA lookups using medicine names or RxCUIs. The dashboard
+shows query status, source links, retrieval timestamps and expandable label
+excerpts. These are reviewer references, separate from the approved education
+corpus and the rule-based workflow risk level. Not every lookup will match;
+an unavailable or ambiguous terminology result requires reviewer confirmation.
+The baseline Blueprint still leaves these optional lookups disabled for a fresh
+installation. A live synthetic OpenAI run returned
 `openai_structured:gpt-4.1-mini` and paused for human review. The local `.env`
 and secrets are never committed. The deployment pins direct runtime
 dependencies; it is not a complete transitive lockfile.

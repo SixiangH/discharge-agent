@@ -28,6 +28,18 @@ async function main() {
     },
   });
   vm.runInContext(script, context);
+  const publicHtml=vm.runInContext(`publicDrugEvidence([{
+    medication_name:'Synthetic drug',
+    rxnorm:{status:'matched',rxcui:'123',retrieved_at:'2026-10-17T00:00:00Z',cache_status:'miss'},
+    dailymed:{status:'matched',labels:[{title:'Synthetic label',label_url:'https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=test',spl_version:'2'}]},
+    openfda:{status:'matched',label_id:'test-id',evidence_excerpts:{warnings:'<script>unsafe markup</script>'}}
+  }])`,context);
+  assert.ok(publicHtml.includes('RxCUI: 123'));
+  assert.ok(publicHtml.includes('Synthetic label'));
+  assert.ok(publicHtml.includes('View label excerpts'));
+  assert.ok(publicHtml.includes('&lt;script&gt;unsafe markup&lt;/script&gt;'));
+  assert.ok(!publicHtml.includes('<script>unsafe markup'));
+  assert.ok(vm.runInContext("publicDrugEvidence([{medication_name:'Unknown',rxnorm:{status:'ambiguous'}}])",context).includes('not queried: terminology match required'));
   await vm.runInContext('loadDemoCases()', context);
   assert.equal(elements.demoCaseSelect.options.length, 8);
   assert.equal(posts, 0, 'loading examples must not run the workflow');
